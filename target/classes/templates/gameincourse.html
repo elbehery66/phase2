@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="windows-1256"/>
+<title>Insert title here</title>
+</head>
+<body>
+<table th:if="${CourseName}" th:inline="text">
+	
+ 		<tr th:each="game : ${CourseName}">
+			game in course<td th:text="${game}"></td>
+			
+		</tr>
+</table>
+
+<table th:if="${courseingame}" th:inline="text">
+		
+			
+		<ul>
+ 		<tr th:each="course : ${courseingame}">
+			<li th:text="${course}"></li>
+			
+		</tr>
+
+</ul>
+
+
+</table>
+</body>
+</html>

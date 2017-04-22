@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="windows-1256"/>
+<title>add Game</title>
+</head>
+
+<body>
+<form action="/addNewGame">
+
+
+
+gameName <input type="text" name="gameName" />
+Description  <input type="text" name="Description" />
+<br></br>
+Course name 
+<br></br>
+<table  th:if="${courses}" th:inline="text">
+		
+		
+ 		<tr th:each="course : ${courses}">
+			 <input th:text="${course}"  type = "radio" name = "coursename" th:value="${course}"/>
+			 
+		</tr>
+
+
+
+<br></br>
+
+<input type="submit" value ="add Question" />
+
+</table>
+
+
+</form>
+</body>
+</html>

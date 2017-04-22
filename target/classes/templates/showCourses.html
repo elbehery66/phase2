@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="windows-1256" />
+<title>Insert title here</title>
+</head>
+<body>
+	Course Name
+	<table th:if="${courses}" th:inline="text">
+
+
+		<ul>
+			<tr th:each="course : ${courses}">
+				<li th:text="${course}"></li>
+
+			</tr>
+
+		</ul>
+
+
+	</table>
+
+	<br></br>
+</body>
+</html>
